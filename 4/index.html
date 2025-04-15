@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>AIn't</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Object Recognition AI</h1>
+        <form id="neuron-form">
+            <div id="input-neurons"></div>
+            <button type="button" id="clear-button">Clear</button>
+            <button type="button" id="predict-button" onclick="predict()">Predict</button>
+            <div id="result"></div>
+            <div id="feedback"></div>
+        </form>
+        <div id="brain-controls">
+            <button id="reset-brain">Reset Brain</button><!--
+            <button id="export-brain">Export Brain</button>
+            <button id="import-brain">Import Brain</button>-->
+            <button id="auto-trainer-toggle">Start Auto-Trainer</button>
+            <div id="training-stats"></div>
+            <textarea id="brain-json" placeholder="Paste brain JSON here to import"></textarea>
+        </div>
+    </div>
+    <div id="brain"></div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/draw.js"></script>
+    <script src="scripts/brain.js"></script>
+    <script src="scripts/autoTrainer.js"></script>
+</body>
+</html>
